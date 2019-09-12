@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="TrueNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55u-6V-VcU">
+                        <rect key="frame" x="16" y="13" width="37.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MLv-Ql-pQL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 2 Copy 6" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-Gm-Jtb">
+                        <rect key="frame" x="278" y="11.5" width="24" height="24"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRL-w5-RF6">
+                        <rect key="frame" x="233.5" y="13" width="37.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gal-26-5t2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M72-Vm-XNL">
+                        <rect key="frame" x="16" y="44" width="286" height="1"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="uls-J2-NyE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="55u-6V-VcU" secondAttribute="bottom" constant="10" id="00U-OF-q1O"/>
+                    <constraint firstItem="55u-6V-VcU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AMa-KK-koc"/>
+                    <constraint firstItem="bkq-Gm-Jtb" firstAttribute="centerY" secondItem="55u-6V-VcU" secondAttribute="centerY" id="CFk-fZ-0UI"/>
+                    <constraint firstItem="bkq-Gm-Jtb" firstAttribute="leading" secondItem="qRL-w5-RF6" secondAttribute="trailing" constant="7" id="RqC-4o-4JB"/>
+                    <constraint firstAttribute="trailing" secondItem="bkq-Gm-Jtb" secondAttribute="trailing" constant="15" id="UOw-Qd-iJc"/>
+                    <constraint firstItem="M72-Vm-XNL" firstAttribute="trailing" secondItem="bkq-Gm-Jtb" secondAttribute="trailing" id="aQh-St-xyj"/>
+                    <constraint firstItem="M72-Vm-XNL" firstAttribute="leading" secondItem="55u-6V-VcU" secondAttribute="leading" id="nMX-kK-3HI"/>
+                    <constraint firstItem="qRL-w5-RF6" firstAttribute="centerY" secondItem="55u-6V-VcU" secondAttribute="centerY" id="tGB-Iq-AqK"/>
+                    <constraint firstAttribute="bottom" secondItem="M72-Vm-XNL" secondAttribute="bottom" id="tqk-jb-co5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="mainLabel" destination="55u-6V-VcU" id="YZP-oH-B43"/>
+                <outlet property="subLabel" destination="qRL-w5-RF6" id="hMS-Ds-laA"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="54.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Artboard 2 Copy 6" width="24" height="24"/>
+    </resources>
+</document>
